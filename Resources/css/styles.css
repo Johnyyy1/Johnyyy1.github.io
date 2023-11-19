@@ -1,0 +1,243 @@
+body{
+    background: rgb(40,44,87);
+    background: linear-gradient(90deg, rgba(40,44,87,1) 0%, rgba(0,82,98,1) 100%);
+    color: white;
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: "Poppins", Helvetica, sans-serif;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.info,  .img {
+    flex: 1;
+    margin: 10px;
+}
+
+ul {
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: grid;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.header{
+    text-align: center;
+    font-size: 40px;
+    margin: 25px;
+    text-shadow: 3px 3px 6px rgb(216, 5, 5);
+    height: 20vh;
+}
+
+
+.info p{
+    margin: 20px;
+    padding: 50px;
+    font-size: 29px;
+}
+
+.info{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: large;
+}
+
+b{
+    color: rgb(255, 0, 242);
+}
+
+.img{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.img img{
+    border-radius: 30%;
+    transition: transform 0.3s ease;
+}
+
+
+.nadpis{
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    padding: 0;
+    margin: 0;
+}
+
+.projects-container {
+    display: grid;
+    height: 100vh;
+}
+
+.grid-projects-container{
+    grid-template-columns: repeat();
+    column-gap: 50px;
+}
+
+.one{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: center;
+}
+.two{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    text-align: center;
+}
+.three{
+    grid-column-start: 3;
+    grid-column-end:3 ;
+    text-align: center;
+}
+
+.contact{
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px; 
+    padding: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+}
+
+form{
+    max-width: 400px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button{
+    background-color:#4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #45a049
+}
+
+.contact h1{
+    color: #4caf50;
+}
+
+.nadpis h1{
+    text-shadow: 3px 3px 6px rgb(216, 5, 5);
+}
+
+.copyright{
+    text-align: center;
+}
+
+.one img{
+    height: 400px;
+    width: 400px;
+}
+
+.two img{
+    height: 400px;
+    width: 400px;
+}
+
+.three img{
+    height: 400px;
+    width: 400px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.projects-container img:hover {
+    filter: grayscale(100%);
+}
+
+.projects-container b{
+    color:#4caf50;
+}
+
+@media only screen and (max-width: 768px) {
+    
+body {
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    font-size: 20px;
+}
+
+.container {
+    flex-direction: column;
+}
+
+.info, .img {
+    width: 100%;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.one, .two, .three{
+    grid-column: auto;
+    position: relative;
+}
+
+.contact {
+    position: relative;
+    margin-top: 900px; 
+}
+}
